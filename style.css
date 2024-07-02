@@ -12,7 +12,7 @@ html {
 
 body {
   max-width: 1300px;
-  margin: 1em auto;
+  margin: 1rem auto 0 auto;
 }
 
 button,
@@ -164,4 +164,25 @@ input {
   100% {
     background-position: -20px 0, 20px 0;
   }
+}
+
+footer {
+  background-color: #292b23;
+  color: #e8ebd9;
+  padding: 5rem 2rem;
+}
+
+.footerDiv {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.footerDiv ul {
+  padding: 1rem;
+  list-style-type: none;
+  width: 50%;
+}
+
+.marginRight {
+  border-right: 2px solid white;
 }
