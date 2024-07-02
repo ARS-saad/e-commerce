@@ -1,7 +1,13 @@
 function searchHandling() {
+  loading(true);
   const searchElement = document.getElementById("search");
   loadData(searchElement.value);
 }
+
+const loading = (hidden) => {
+  const load = document.getElementById("load");
+  hidden ? load.classList.remove("hidden") : load.classList.add("hidden");
+};
 
 const loadData = async (Value) => {
   const data = await fetch(
@@ -36,4 +42,5 @@ const displaySearchReseal = (data) => {
     `;
     product.appendChild(card);
   });
+  loading(false);
 };
